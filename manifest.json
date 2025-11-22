@@ -1,10 +1,10 @@
 {
-	"manifest_version": 3,
 	"name": "No Groupthink",
-	"version": "1.0",
 	"description": "A lightweight Chrome extension for Letterboxd that hides movie ratings and averages to help you form your own opinions.",
+	"manifest_version": 3,
+	"version": "1.0",
 	"action": {
-		"default_popup": "popup.html",
+		"default_popup": "popup/popup.html",
 		"default_title": "Toggle site style"
 	},
 	"icons": {
