@@ -1,4 +1,4 @@
 span.rating,
 section.ratings-histogram-chart {
-	display: none;
+	display: none !important;
 }
