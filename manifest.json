@@ -12,7 +12,7 @@
 	},
 	"content_scripts": [
 		{
-			"js": ["dist/content.js"],
+			"js": ["scripts/content.js"],
 			"matches": ["https://letterboxd.com/*"],
 			"run_at": "document_start"
 		}
@@ -20,7 +20,7 @@
 	"permissions": ["storage", "scripting", "activeTab"],
 	"host_permissions": ["*://www.letterboxd.com/*"],
 	"background": {
-		"service_worker": "dist/background.js"
+		"service_worker": "scripts/background.js"
 	},
 	"web_accessible_resources": [
 		{
