@@ -37,7 +37,8 @@ body {
 
 /* Written label */
 .extension__toggle-text {
-	padding-top: 2px;
+	font-size: 1rem;
+	padding-top: 0.15em;
 }
 
 /* Container for the switch */
