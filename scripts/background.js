@@ -1,11 +1,26 @@
 function handleMessage(message) {
-	switch (message.action) {
-		case 'HIDE_RATINGS':
-			console.log('Hide Ratings');
-			break;
-		case `SHOW_RATINGS`:
-			console.log('Show Ratings');
-			break;
+	if (message.action === 'HIDE_RATINGS' || message.action === 'SHOW_RATINGS') {
+		chrome.tabs.query({}, (tabs) => {
+			for (const tab of tabs) {
+				if (!tab.url || !tab.id) continue;
+
+				if (matchesHost(tab.url)) {
+					chrome.scripting.executeScript({
+						target: { tabId: tab.id },
+						files: ['scripts/content.js'],
+					});
+				}
+			}
+		});
+	}
+}
+
+function matchesHost(url) {
+	try {
+		const { hostname } = new URL(url);
+		return hostname === 'letterboxd.com';
+	} catch {
+		return false;
 	}
 }
 
