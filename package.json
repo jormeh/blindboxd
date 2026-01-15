@@ -2,5 +2,8 @@
 	"name": "blindboxd",
 	"devDependencies": {
 		"vite": "^7.2.4"
+	},
+	"scripts": {
+		"build": "vite build"
 	}
 }
