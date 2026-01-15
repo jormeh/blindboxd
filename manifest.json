@@ -1,6 +1,6 @@
 {
-	"name": "No Groupthink",
-	"description": "Hide movie ratings and averages on Letterboxd.",
+	"name": "Blindboxd",
+	"description": "Hide user ratings and averages on Letterboxd.",
 	"manifest_version": 3,
 	"version": "1.0",
 	"action": {
