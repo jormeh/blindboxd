@@ -1,4 +1,5 @@
 span.rating,
+svg.glyph.-rating,
 section.ratings-histogram-chart {
 	display: none !important;
 }
