@@ -2,7 +2,7 @@
 
 ![Blindboxd Thumbnail](images/thumbnail.png)
 
-Blindboxd is a lightweight browser extension designed to hide ratings and averages on Letterboxd, helping you form unbiased opinions about movies. 
+Blindboxd is a lightweight browser extension designed to hide ratings and averages on Letterboxd, helping you form unbiased opinions about movies.
 
 Unofficial side project — not affiliated with or endorsed by Letterboxd.
 
@@ -14,13 +14,12 @@ Unofficial side project — not affiliated with or endorsed by Letterboxd.
 - **User-Friendly Interface**: Simple and intuitive design for all users.
 
 ## How to Install
+
 1. Clone the repo
 2. Open chrome://extensions
 3. Enable "Developer mode"
 4. Click "Load unpacked"
 5. Select the project folder
-
-
 
 ## Skills Demonstrated
 
@@ -50,3 +49,4 @@ The eye in the logo is sourced from <a href="https://www.freepik.com/free-vector
 ## TODO
 
 - Add functionality to hide heart likes.
+- Add toggle for review sections
