@@ -24,7 +24,7 @@
 	},
 	"web_accessible_resources": [
 		{
-			"resources": ["styles/hide-ratings.css"],
+			"resources": ["styles/hide-ratings.css", "styles/hide-reviews.css"],
 			"matches": ["https://letterboxd.com/*"]
 		}
 	]

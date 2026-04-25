@@ -26,38 +26,50 @@ body {
 	width: 160px;
 }
 
+.extension__toggles-container {
+	display: flex;
+	flex-flow: column;
+	justify-content: space-between;
+	height: 55px;
+}
+
 /* Flexbox for label and switch */
-.extension__toggle-container {
+.extension__ratings-toggle-container,
+.extension__reviews-toggle-container {
 	display: flex;
 	flex-flow: row;
-	justify-content: center;
+	justify-content: space-between;
 	width: 100%;
 	gap: 10px;
 }
 
 /* Written label */
-.extension__toggle-text {
-	font-size: 1rem;
-	padding-top: 0.15em;
+.extension__ratings-toggle-text,
+.extension__reviews-toggle-text {
+	font-size: 0.85rem;
+	padding-top: 0.1em;
 }
 
 /* Container for the switch */
-.extension__toggle-switch {
+.extension__ratings-toggle,
+.extension__reviews-toggle {
 	position: relative;
 	left: -7px;
-	width: 50px;
-	height: 24px;
+	width: 45px;
+	height: 21px;
 }
 
 /* Hide default checkbox */
-.extension__toggle-checkbox {
+.extension__ratings-toggle-checkbox,
+.extension__reviews-toggle-checkbox {
 	opacity: 0;
 	width: 0;
 	height: 0;
 }
 
 /* The track */
-.extension__toggle-slider {
+.extension__ratings-toggle-slider,
+.extension__reviews-toggle-slider {
 	position: absolute;
 	cursor: pointer;
 	background-color: var(--letterboxd-black);
@@ -68,12 +80,13 @@ body {
 }
 
 /* The circular slider */
-.extension__toggle-slider::before {
+.extension__ratings-toggle-slider::before,
+.extension__reviews-toggle-slider::before {
 	content: '';
 	position: absolute;
-	height: 20px;
-	width: 20px;
-	left: 4px;
+	height: 16px;
+	width: 16px;
+	left: 2px;
 	bottom: 2px;
 	background-color: var(--letterboxd-white);
 	border-radius: 50%;
@@ -81,10 +94,15 @@ body {
 }
 
 /* Toggled state */
-.extension__toggle-checkbox:checked + .extension__toggle-slider {
+.extension__ratings-toggle-checkbox:checked + .extension__ratings-toggle-slider,
+.extension__reviews-toggle-checkbox:checked
+	+ .extension__reviews-toggle-slider {
 	background-color: var(--letterboxd-blue);
 }
 
-.extension__toggle-checkbox:checked + .extension__toggle-slider::before {
+.extension__ratings-toggle-checkbox:checked
+	+ .extension__ratings-toggle-slider::before,
+.extension__reviews-toggle-checkbox:checked
+	+ .extension__reviews-toggle-slider::before {
 	transform: translateX(22px);
 }

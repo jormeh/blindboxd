@@ -1,0 +1,5 @@
+a.icon-review,
+#popular-reviews,
+section.film-recent-reviews {
+	display: none !important;
+}

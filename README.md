@@ -47,6 +47,3 @@ The Blindboxd logo and color scheme are inspired by <a href="https://letterboxd.
 The eye in the logo is sourced from <a href="https://www.freepik.com/free-vector/illustration-eye-icon_3115228.htm#fromView=keyword&page=1&position=3&uuid=85eb93d4-14d7-4a06-9750-8a55fe23b985&query=Eye+svg>">Freepik.</a>
 
 ## TODO
-
-- Add functionality to hide heart likes.
-- Add toggle for review sections

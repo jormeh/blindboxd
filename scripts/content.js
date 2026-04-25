@@ -1,9 +1,18 @@
 // Inject or remove CSS depending on state
 chrome.storage.local.get(['ratings-hidden'], (result) => {
 	if (result['ratings-hidden'] === 'true') {
-		injectCSS('blindboxd-css', 'styles/hide-ratings.css');
+		injectCSS('blindboxd-ratings-css', 'styles/hide-ratings.css');
 	} else {
-		removeCSS('blindboxd-css');
+		removeCSS('blindboxd-ratings-css');
+	}
+});
+
+// Inject or remove CSS for reviews depending on state
+chrome.storage.local.get(['reviews-hidden'], (result) => {
+	if (result['reviews-hidden'] === 'true') {
+		injectCSS('blindboxd-reviews-css', 'styles/hide-reviews.css');
+	} else {
+		removeCSS('blindboxd-reviews-css');
 	}
 });
 

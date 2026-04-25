@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 	<head>
 		<link href="popup.css" rel="stylesheet" />
@@ -10,16 +10,29 @@
 				src="/images/blindboxd-logo.svg"
 				alt="Horizontal logo for Letterboxd"
 			/>
-			<div class="extension__toggle-container">
-				<span class="extension__toggle-text">Hide Ratings</span>
-				<label class="extension__toggle-switch" for="toggle-switch">
-					<input
-						class="extension__toggle-checkbox"
-						id="toggle-switch"
-						type="checkbox"
-					/>
-					<span class="extension__toggle-slider"></span>
-				</label>
+			<div class="extension__toggles-container">
+				<div class="extension__ratings-toggle-container">
+					<span class="extension__ratings-toggle-text">Hide Ratings</span>
+					<label class="extension__ratings-toggle" for="ratings-toggle">
+						<input
+							class="extension__ratings-toggle-checkbox"
+							id="ratings-toggle"
+							type="checkbox"
+						/>
+						<span class="extension__ratings-toggle-slider"></span>
+					</label>
+				</div>
+				<div class="extension__reviews-toggle-container">
+					<span class="extension__reviews-toggle-text">Hide Reviews</span>
+					<label class="extension__reviews-toggle" for="reviews-toggle">
+						<input
+							class="extension__reviews-toggle-checkbox"
+							id="reviews-toggle"
+							type="checkbox"
+						/>
+						<span class="extension__reviews-toggle-slider"></span>
+					</label>
+				</div>
 			</div>
 		</div>
 		<script src="popup.js"></script>

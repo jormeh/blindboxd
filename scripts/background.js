@@ -1,5 +1,10 @@
 function handleMessage(message) {
-	if (message.action === 'HIDE_RATINGS' || message.action === 'SHOW_RATINGS') {
+	if (
+		message.action === 'HIDE_RATINGS' ||
+		message.action === 'SHOW_RATINGS' ||
+		message.action === 'HIDE_REVIEWS' ||
+		message.action === 'SHOW_REVIEWS'
+	) {
 		chrome.tabs.query({}, (tabs) => {
 			for (const tab of tabs) {
 				if (!tab.url || !tab.id) continue;
